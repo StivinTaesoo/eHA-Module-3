@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
         <title>Challenge-2: Grade Calculator</title>
     </head>
     <body>
+        <h2>GRADE CALCULATOR SYSTEM</h2>
+
         <script>
             // Javascript code to calculate students' grade
             let score = prompt("Enter student score ");
@@ -17,9 +20,13 @@
             } else if (score < 70) {
                 grade = "C";
             }
-            alert("Your score is " + score + " and your grade " + grade);
+            alert("Your score is " + score + " and your grade is " + grade);
             document.write(
-                "Your score is " + score + " and your grade " + grade
+                "<h1>Your score is " +
+                    score +
+                    " and your grade is " +
+                    grade +
+                    "</h1>"
             );
         </script>
     </body>

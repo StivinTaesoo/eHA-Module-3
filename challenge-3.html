@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Challenge-3: Change a Webpage Color</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(10, 10, 10);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .colorChange {
+                background-color: rgb(77, 164, 247);
+            }
+            button {
+                background: orangered;
+                color: white;
+                padding: 10px 20px;
+                font-size: 18px;
+                border-radius: 8px;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="cont">
+            <button onclick="blueBg()">click me</button>
+        </div>
+
+        <script>
+            function blueBg() {
+                let pageBody = document.getElementById("cont");
+                pageBody.classList.toggle("colorChange");
+            }
+        </script>
+    </body>
+</html>
