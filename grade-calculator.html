@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Challenge-2: Grade Calculator</title>
+    </head>
+    <body>
+        <script>
+            // Javascript code to calculate students' grade
+            let score = prompt("Enter student score ");
+            let grade;
+            if (score >= 70) {
+                grade = "A";
+            } else if (score <= 40) {
+                grade = "F";
+            } else if (score < 70) {
+                grade = "C";
+            }
+            alert("Your score is " + score + " and your grade " + grade);
+            document.write(
+                "Your score is " + score + " and your grade " + grade
+            );
+        </script>
+    </body>
+</html>
