@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Challenge-4: Cars Listing</title>
+    </head>
+    <body>
+        <h1>Array of Cars</h1>
+        <p>Open the console to see the arrays</p>
+        <script>
+            // Initializing the Cars Array
+            let cars = [
+                "toyota",
+                "honda",
+                "madza",
+                "mitsubishi",
+                "tesla",
+                "lexus",
+            ];
+
+            // Logging the first and last items of the array to the console
+            console.log(
+                "The first item is " +
+                    cars[0] +
+                    " and the last item is " +
+                    cars[cars.length - 1]
+            );
+
+            // Adding Mercedes-benz to the array and logging it to console
+            cars.push("Mercedes-benz");
+            console.log(cars);
+
+            // Looping through the cars array
+            for (let i = 0; i < cars.length; i++) {
+                console.log(cars[i]);
+            }
+        </script>
+    </body>
+</html>
